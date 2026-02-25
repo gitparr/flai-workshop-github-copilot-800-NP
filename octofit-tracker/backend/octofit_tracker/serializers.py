@@ -16,10 +16,14 @@ class UserSerializer(serializers.ModelSerializer):
 class TeamSerializer(serializers.ModelSerializer):
     id = serializers.SerializerMethodField()
     members = UserSerializer(many=True, read_only=True)
+    member_ids = serializers.PrimaryKeyRelatedField(
+        many=True, write_only=True, queryset=User.objects.all(),
+        source='members', required=False
+    )
 
     class Meta:
         model = Team
-        fields = ['id', 'name', 'members']
+        fields = ['id', 'name', 'members', 'member_ids']
 
     def get_id(self, obj):
         return str(obj.pk)

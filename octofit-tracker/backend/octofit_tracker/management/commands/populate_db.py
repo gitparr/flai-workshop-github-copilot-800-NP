@@ -105,6 +105,16 @@ class Command(BaseCommand):
                 'duration': 90.0
             },
             {
+                'name': 'Thor Thunder Strength',
+                'description': 'Heavy lifting and explosive power training worthy of an Asgardian god.',
+                'duration': 60.0
+            },
+            {
+                'name': 'Captain America Shield Drill',
+                'description': 'Full-body conditioning and shield-throwing agility for super-soldiers.',
+                'duration': 50.0
+            },
+            {
                 'name': 'Batman Strength & Endurance',
                 'description': 'Full-body strength and endurance workout to master Gotham\'s nights.',
                 'duration': 75.0
@@ -113,6 +123,21 @@ class Command(BaseCommand):
                 'name': 'Superman Power Training',
                 'description': 'Power and speed training for superhuman performance.',
                 'duration': 30.0
+            },
+            {
+                'name': 'Wonder Woman Warrior Circuit',
+                'description': 'Combat-focused circuit training inspired by Amazonian warrior discipline.',
+                'duration': 65.0
+            },
+            {
+                'name': 'The Flash Speed Intervals',
+                'description': 'High-speed sprint intervals and reaction-time drills for maximum velocity.',
+                'duration': 40.0
+            },
+            {
+                'name': 'Green Lantern Core Power',
+                'description': 'Core strength and willpower endurance training for intergalactic heroes.',
+                'duration': 55.0
             },
         ]
 
